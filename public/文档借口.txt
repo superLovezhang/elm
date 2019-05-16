@@ -1,0 +1,33 @@
+�͹�:https://h5.ele.me/restapi/shopping/v3/restaurants?latitude=30.430027&longitude=114.268522&offset=0&limit=8&extras[]=activities&extras[]=tags&extra_filters=home&rank_id=&terminal=h5
+
+
+ɸѡ,����:https://h5.ele.me/pizza/shopping/restaurants/batch_filter?latitude=30.430027&longitude=114.268522&terminal=h5
+
+
+����:https://h5.ele.me/restapi/shopping/v2/entries?latitude=30.430027&longitude=114.268522&templates[]=main_template&templates[]=favourable_template&templates[]=svip_template&terminal=h5
+
+
+商品信息items:[
+    {restaurant:{
+       src:'店铺头像'
+       name:'店铺名字',
+       rating:'店铺打分',
+       recent_order_num:店铺月售 ,
+       rules:[
+           {
+               fee:'配送',
+               price:'起送'
+           }
+       ]，
+       flavors:[
+           {id:802,
+            name:'商铺标签'
+           }
+       ],
+       activities:[
+           {icon_name:'图标字',
+            tips:'图标后面描述'
+           }
+       ]
+    }}
+]
