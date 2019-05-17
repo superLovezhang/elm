@@ -100,10 +100,6 @@ export default {
 .el-divider {
   background-color: #999999;
 }
-.tab {
-  position: fixed;
-  bottom: 0;
-}
 .filter {
   width: 100%;
   height: 50px;

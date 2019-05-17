@@ -30,6 +30,8 @@
     width: 100%;
     display: flex;
     height: 50px;
+    position: fixed;
+    bottom: 0;
     text-align: center;
     padding-top: 10px;
     z-index: 11;

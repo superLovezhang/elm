@@ -15,16 +15,16 @@
     <div class="swiper-container" ref="quantity">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="@/assets/loop1.jpg" width="400px">
+          <img src="@/assets/loop1.jpg">
         </div>
         <div class="swiper-slide">
-          <img src="@/assets/loop2.jpg" width="400px">
+          <img src="@/assets/loop2.jpg">
         </div>
         <div class="swiper-slide">
-          <img src="@/assets/loop3.jpg" width="400px">
+          <img src="@/assets/loop3.jpg">
         </div>
         <div class="swiper-slide">
-          <img src="@/assets/loop4.jpg" width="400px">
+          <img src="@/assets/loop4.jpg">
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -42,7 +42,7 @@ export default {
       loop: true,
       autoplay: true,
       pagination: {
-        el: ".swiper-pagination"
+        el: ".swiper-pagination",
       }
     });
   }
@@ -103,6 +103,9 @@ export default {
 }
 .superVip span:nth-child(4) {
   font-size: 12px;
+}
+.swiper-slide img{
+  width: 100%;
 }
 .littleLg{
     width: 70px;
