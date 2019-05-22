@@ -2,7 +2,7 @@
   <div>
     <span v-if="indexs" @touchstart="reduce">-</span>
     <i v-if="indexs">{{ indexs }}</i>
-    <span class="jia" @touchstart="add()">+</span>
+    <span class="jia" @touchstart="add">+</span>
   </div>
 </template>
 
@@ -30,18 +30,18 @@ export default {
         this.indexs -= 1;
         // window.localStorage.setItem('Foodsindex',this.indexs);
         this.$store.state.goods.count--;
-        if(!this.menuIndex){
+        // if(!this.menuIndex){
           this.$store.commit('subMenu', this.menuIndex)
-        }
+        // }
       },
       add(){
         this.indexs += 1;
         this.$store.state.goods.count++;
         this.$emit('toBig');
         // console.log(this.menuIndex,this.foodsIndex)      
-        if(!this.menuIndex){
+        // if(!this.menuIndex){
           this.$store.commit('addMenu', this.menuIndex)
-        }
+        // }
       },
     }
 };

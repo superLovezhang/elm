@@ -22,14 +22,16 @@
         <p>点餐<span></span></p>
       </router-link>
       <router-link tag="div" to="/shop/rate" class="evaluation">
-        <p>评价</p>
+        <p>评价<span></span></p>
       </router-link>
       <router-link tag="div" to="/shop/shopItems" class="merchant">
-        <p>商家</p>
+        <p>商家<span></span></p>
       </router-link>
     </div>
 
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
@@ -149,12 +151,14 @@ export default {
   position: relative;
 }
 .swich span {
-  width: 100%;
-  height: 2px;
-  position: absolute;
   left: 0;
   bottom: 0;
+  position: absolute;
   background-color: #2395ff;
+}
+.router-link-active p span{
+  width: 100%;
+  height: 3px;
 }
 .shopBox 
 .topFixed{

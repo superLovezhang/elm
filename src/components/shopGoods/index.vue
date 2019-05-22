@@ -49,8 +49,11 @@
       </div>
       <div class="shopCar">
         <p>满15减1元，满32减2元</p>
+        <div ref="master" class="master">
+          <p @touchstart="clear">清空</p>
+        </div>
         <div class="bottom">
-           <div class="outbox" ref="outbox">
+           <div class="outbox"  @touchstart="master" ref="outbox">
              <span  :class="{ 'outActive':this.$store.state.goods.count }"><i class="iconfont icon-gouwuche"></i></span>
            </div>
            <div class="description">
@@ -59,7 +62,7 @@
                <p>另需配送费1元</p>
              </div>
              <div class="right" :class="[ this.$store.state.goods.count !== 0 ? 'rightActive' : '' ]">
-               <p>{{ this.$store.state.goods.count === 0 ? '￥10起送' : '去结算'}}</p>
+               <p @touchstart="toAppear">{{ this.$store.state.goods.count === 0 ? '￥10起送' : '去结算'}}</p>
              </div>
            </div>
         </div>
@@ -70,6 +73,7 @@
 
 <script>
 import add from '@/components/add'
+import {Pop} from '@/components/JS'
 import goods from '../../../public/data/shopItem.json';
 export default {
     data(){
@@ -88,7 +92,6 @@ export default {
     },
     created(){
       console.log(goods);
-      this.$store.commit('menuIncream');
       console.log(this.$store.state.goods.menuIndex)
 
     },
@@ -124,6 +127,20 @@ export default {
         setTimeout(() => {
           this.$refs.outbox.className = 'outbox';
         }, 300);
+      },
+      toAppear(){
+         Pop(`支付${this.$store.state.goods.count * 3}元`);
+      },
+      master(){
+        if(this.$refs.master.style.height === '100px'){
+           this.$refs.master.style.height = 0;
+        }else{
+          this.$refs.master.style.height = 100 + 'px';
+        }
+      },
+      clear(){
+        this.$store.state.goods.count = 0;
+        this.$store.state.goods.menuIndex = [0,0,0,0,0,0,0,0,0];
       }
   },
   components:{
@@ -277,9 +294,15 @@ export default {
     bottom: 0;
     z-index: 11;
     width: 100%;
-    height: 68px;
+    // height: 68px;
     position: fixed;
-    background-color: red;
+    // background-color: red;
+    .master{
+      width: 100%;
+      height: 0;
+      transition: all 0.4s;
+      background-color: white;
+    }
     >p{
       color: #333;
       font-size: 10px;
@@ -288,7 +311,7 @@ export default {
       background-color: #fffad8;
     }
     .bottom{
-      height: 100%;
+      height: 48px;
       position: relative;
       padding-left: 90px;
       background-color: #505052;

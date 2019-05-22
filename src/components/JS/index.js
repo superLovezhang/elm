@@ -12,6 +12,11 @@ export var Pop = (function (){
                 return{
                     message:defaults
                 }
+            },
+            mounted(){
+                setTimeout(() => {
+                    document.body.removeChild(this.$el)
+                }, 1500);
             }
          })
          document.body.appendChild(vm.$el);
