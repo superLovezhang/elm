@@ -2,6 +2,7 @@
   <div>
       <div class="shopItem nextNearBox" v-for="item in nearRestaurant.items" :key="item.authentic_id">
         <img
+        @touchstart='ToshopItem'
         :src="item.restaurant.src"
         width="80px"
       >
@@ -46,6 +47,9 @@ export default {
       }else{
         downs.style.height = 20 + 'px';
       }
+    },
+    ToshopItem(){
+      this.$router.push('/shop')
     }
   }
 };

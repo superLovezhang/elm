@@ -1,0 +1,84 @@
+{
+    "comment":[
+        {
+            "avatar": "",
+            "0": {
+                "food_id": 843954288, 
+                "rate_name": "金牌虾仁馄饨-酱拌",
+                "rating": 5,
+                "rating_text": "",
+                "sku_id": 464569192081
+            },
+            "is_super_vip": false,
+            "is_taobao_vip": false,
+            "order_id": 2108663465334851800,
+            "food_names": "金牌虾仁馄饨-酱拌",
+            "image_hash": "1bfe23e5c06b56633b0c8a0ee18d8bb0jpeg",
+            "rated_at": "2019-05-19",
+            "rating": 4,
+            "rating_text": "味道还行，不是饿急了下不去嘴",
+            "time_spent_desc": "40分钟送达",
+            "username": "3*********0"
+        },
+        {
+            "avatar": "",
+            "0": {
+                "food_id": 843954286,
+                "rate_name" : "金牌虾仁馄饨-浓汤",
+                "rating": 4,
+                "sku_id": 464569190033
+                },
+            "is_super_vip": true,
+            "is_taobao_vip": false,
+            "order_id": 2107031995843574000,
+            "food_ids": 843954286,
+            "food_names": "金牌虾仁馄饨-浓汤",
+            "image_hash": "645dbf83ee33a103bf39cba0b4a249a2jpeg",
+            "rated_at": "2019-04-17",
+            "rating": 5,
+            "rating_text": "送了根香肠哦",
+            "time_spent_desc": "40分钟送达",
+            "username": "4*******6"
+        },
+        {
+            "avatar": "b9ad4c4a1ed52a58d8d24ba2b7fda1fbjpeg",
+            "0": {
+                "food_id": 843954286,
+                "rate_name" : "金牌虾仁馄饨-浓汤",
+                "rating": 4,
+                "sku_id": 464569190033
+                },
+            "is_super_vip": true,
+            "is_taobao_vip": false,
+            "order_id": 2107031995843574000,
+            "food_ids": 843954288,
+            "food_names": "金牌虾仁馄饨-酱拌",
+            "image_hash": "a8e6e4536b4bf05dd1a2f6ed533cf559jpeg",
+            "rated_at": "2019-04-09",
+            "rating": 5,
+            "rating_text": "每个都有虾仁，还可以，但是可能因为酱料味道太浓了，虾仁味道不明显金牌虾仁馄饨-酱拌",
+            "time_spent_desc": "40分钟送达",
+            "username": "在***一"
+        },
+        {
+            "avatar": "b9ad4c4a1ed52a58d8d24ba2b7fda1fbjpeg",
+            "0": {
+                "food_id": 843923116,
+                "rate_name" : "生煎金牌虾仁（外酥里嫩）",
+                "rating": 4,
+                "sku_id": 464569190033
+                },
+            "is_super_vip": true,
+            "is_taobao_vip": false,
+            "order_id": 2107031995843574000,
+            "food_ids": 509787641,
+            "food_names": "葱油饼",
+            "image_hash": "8103b019c0bff58a805fc8904b3b5ad6jpeg",
+            "rated_at": "2019-04-01",
+            "rating": 5,
+            "rating_text": "这哪是葱油饼，就是用油炸的跟薯片一样，一点没觉得这是饼的味道，其他两样还行，但这个饼我是吃了一块其他",
+            "time_spent_desc": "40分钟送达",
+            "username": "匿名用户"
+        }
+    ]
+}

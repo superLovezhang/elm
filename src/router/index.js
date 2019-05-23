@@ -7,15 +7,26 @@ import Home from './Home';
 import Find from './Find';
 import Order from './Order';
 import Mine from './Mine';
+import Shop from './shop';
+import Login from './Login'
 
 export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
+  mode: 'history',//路由模式
+  base: process.env.BASE_URL,//会在所有路由地址前面添加base后面的内容
   routes: [
     {path:'/', redirect:'/Home'},
     Home,
     Find,
     Order,
-    Mine
-  ]
+    Mine,
+    Shop,
+    Login
+  ],
+  scrollBehavior (to, from, savedPosition){
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 })
