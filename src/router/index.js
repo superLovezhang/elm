@@ -8,6 +8,7 @@ import Find from './Find';
 import Order from './Order';
 import Mine from './Mine';
 import Shop from './shop';
+import Login from './Login'
 
 export default new Router({
   mode: 'history',//路由模式
@@ -18,6 +19,14 @@ export default new Router({
     Find,
     Order,
     Mine,
-    Shop
-  ]
+    Shop,
+    Login
+  ],
+  scrollBehavior (to, from, savedPosition){
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 })

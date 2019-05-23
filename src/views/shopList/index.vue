@@ -4,7 +4,7 @@
       <img
         src="https://fuss10.elemecdn.com/1/e1/36bfcddf3b5ce6019141f2711a627png.png?imageMogr/format/webp/thumbnail/150x/"
       >
-      <i class="el-icon-arrow-left" @click="$router.back()"></i>
+      <i class="el-icon-arrow-left" @click="$router.push('/Home')"></i>
     </div>
     <div class="description">
       <h3>

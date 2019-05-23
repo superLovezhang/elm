@@ -2,7 +2,7 @@
   <div class='OrderBox' ref="orderBox">
     <img src="https://fuss10.elemecdn.com/d/60/70008646170d1f654e926a2aaa3afpng.png" alt>
     <p>登陆后查看外卖订单</p>
-    <a href="javascript:" class="login">立即登录</a>
+    <router-link tag="a" to="/login" class="login">立即登录</router-link>>
     <tabBar />
   </div>
 </template>
